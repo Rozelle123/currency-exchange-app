@@ -54,7 +54,7 @@ const CurrencyConverter = () => {
 
   return (
     <div className='outer-container'>
-      <h2 >GLOBAL EXCHANGES</h2>
+      <h2 >GLOBAL EXCHANGE</h2>
       <hr className='hr-line'/>
       <div className='currency-container'>      
         <FormControl sx={{ m: 1, minWidth: 80 }}>
