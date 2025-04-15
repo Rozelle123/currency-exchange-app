@@ -15,7 +15,7 @@ const ShowTechStack = () => {
         <span>REACT</span>
       </div>
       <div className='tech-icon'>        
-       <img src={jsIcon} 
+       <img src={jsIcon} alt='javascript Icon'
         style={{width: '45px', height: '25px'}}/>
         <span>JAVASCRIPT</span>
       </div>

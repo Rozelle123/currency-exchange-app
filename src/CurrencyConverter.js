@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { FormControl, InputLabel, Select, MenuItem, TextField, Box } from "@mui/material";
 import ReplayCircleFilledIcon from '@mui/icons-material/ReplayCircleFilled';
 import './style.css';
-import { useQuery } from '@tanstack/react-query';
-import { getExchangeRates } from './api/currencyApi';
-import { formatToCurrency } from './utils';
 import { useCurrency } from './CurrencyContext';
 
 
@@ -50,12 +47,9 @@ const CurrencyConverter = () => {
     setTargetRate(selectedTargetRate);
     
   }
-
-  const convertTargetRate = () => {   
-    setConvertedAmount(amount * targetRate)
-  }
-
+  
   if (isLoading) return <p>Loading...</p>;
+
   if (isError) return <p>Error: {error.message}</p>;
 
   return (

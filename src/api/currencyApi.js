@@ -1,6 +1,5 @@
 
 import axios from 'axios';
-import CurrencyConverter from '../CurrencyConverter';
 
 const API_KEY = 'ff10792be9c5fbbff751e8ac';
 
